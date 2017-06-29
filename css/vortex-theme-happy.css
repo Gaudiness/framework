@@ -1,0 +1,104 @@
+/*框架2.0的主题1*/
+/*update by sunhao */
+/*2016.9.9*/
+/*版本 0.1*/
+
+
+/*********************抽屉式菜单**********************/
+.vortex-container-withShadow{
+	background-color: #F2F5EB;
+}
+
+.vortex-user-panel > div,
+.vortex-first-menu .vortex-menu-item{
+	border-bottom: 1px solid #ddd;
+}
+
+.vortex-menu-item:nth-child(1) div{
+	border-color: #70A79C!important;
+}
+
+	.vortex-menu-item:nth-child(1) div:hover, 
+	.vortex-menu-item:nth-child(1) .vortexMenuSelected{
+		background-color: #70A79C!important;
+	}
+
+.vortex-menu-item:nth-child(2) div{
+	border-color: #C19A99!important;
+}
+
+	.vortex-menu-item:nth-child(2) div:hover, 
+	.vortex-menu-item:nth-child(2) .vortexMenuSelected{
+		background-color: #C19A99;
+	}
+
+.vortex-menu-item:nth-child(3) div{
+	border-color: #DCA762!important;
+}
+
+	.vortex-menu-item:nth-child(3) div:hover, 
+	.vortex-menu-item:nth-child(3) .vortexMenuSelected{
+		background-color: #DCA762;
+	}
+
+.vortex-menu-item:nth-child(4) div{
+	border-color: #6270DD!important;
+}
+
+	.vortex-menu-item:nth-child(4) div:hover, 
+	.vortex-menu-item:nth-child(4) .vortexMenuSelected{
+		background-color: #6270DD;
+	}
+
+.vortex-menu-item:nth-child(5) div{
+	border-color: #62AADD!important;
+}
+
+	.vortex-menu-item:nth-child(5) div:hover, 
+	.vortex-menu-item:nth-child(5) .vortexMenuSelected{
+		background-color: #62AADD;
+	}
+
+.vortex-menu-item:nth-child(6) div{
+	border-color: #EF5350!important;
+}
+
+	.vortex-menu-item:nth-child(6) div:hover, 
+	.vortex-menu-item:nth-child(6) .vortexMenuSelected{
+		background-color: #EF5350;
+	}
+
+.vortex-menu-item:nth-child(7) div{
+	border-color: #C19A99!important;
+}
+
+	.vortex-menu-item:nth-child(7) div:hover, 
+	.vortex-menu-item:nth-child(7) .vortexMenuSelected{
+		background-color: #C19A99;
+	}
+
+.vortex-menu-item:nth-child(8) div{
+	border-color: #C19A99!important;
+}
+
+	.vortex-menu-item:nth-child(8) div:hover, 
+	.vortex-menu-item:nth-child(8) .vortexMenuSelected{
+		background-color: #C19A99;
+	}
+
+.vortex-sub-menu{
+	background-color: #F2F5EB; 
+}
+
+	.sub-menu-item:hover{
+		background-color: #E6EBDD;
+	}
+
+.btn-container{
+	background-color: #F2F5EB;
+	border-top: 1px solid #ddd;
+}
+
+.border-right{
+	border-right: 1px solid #ddd;
+}

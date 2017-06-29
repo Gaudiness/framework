@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>历史轨迹</title>
+	<meta charset="utf-8">
+	<script src="js/libs/jquery-1.9.1.js"></script>
+    <script src="js/libs/knockout-3.4.0.js"></script>
+    <script src="js/libs/knockout.mapping-latest.debug.js"></script>
+     <!-- 历史轨迹控件 -->
+    <script src="js/vortex-pattern/vortex-pattern-contrail/vortex-pattern-contrail.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="js/vortex-pattern/vortex-pattern-contrail/vortex-pattern-contrail.css">
+    <script src="js/customer/contrail/contrail.js" type="text/javascript"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+</head>
+<body>
+<div id="vortex-trajectory" class="vortex-trajectory">
+    <div class="vortex-trajectory-title">
+        <span>历史轨迹</span>
+    </div>
+    <div class="vortex-trajectory-map"></div>
+    <div class="vortex-trajectory-track" id="vortex-trajectory-track" data-bind="foreach: timeSlot">
+        <div data-bind="style:{ width: width }, css:{ 'vortex-round-selected': timeSlotStaus() == 'selected', 'inTimeSlot': inTimeSlotline, 'vortex-round-inTimeSlot': timeSlotStaus() == 'travelled' }">
+            <span class="vortex-track-round" data-bind="click:$root.changeSelected"></span>
+            <span class="vortex-track-time" data-bind="text: TimePoint"></span>
+        </div>
+    </div>
+    <div class="vortex-trajectory-btns">
+        <div>
+            <i class="iconfont icon-backward-btn" data-bind="click: turnLeft"></i>
+            <i class="iconfont btn-specil" data-bind="html: icon, click:contrailPlay"></i>
+            <i class="iconfont icon-forward-btn" data-bind="click: turnRight"></i>
+        </div>
+    </div>
+    <!-- </div> -->
+</div>
+</body>
+</html>

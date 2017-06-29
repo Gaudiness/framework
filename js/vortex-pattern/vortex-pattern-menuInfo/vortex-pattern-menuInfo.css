@@ -1,0 +1,104 @@
+/*框架2.0的组件样式库*/
+/*update by sunhao */
+/*2016.9.9*/
+/*版本 0.1*/
+
+
+/*********************css样式reset****************/
+* {
+    vertical-align: baseline;
+    font-weight: inherit; 
+    font-family: inherit; 
+    font-style: inherit;
+    /*font-size: 100%;*/
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+* {
+	font-size: 12px;
+	color: #7a8895;
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+
+/*********************menu控件***********************/
+.vortex-menu-Info{
+    position: absolute;
+    width: 290px;
+    top: 88px;
+    right: -290px;
+    bottom: 0;
+    z-index: 1002;
+    background-color: white;
+    border-left: 1px solid #ddd;
+}
+
+    .vortex-menu-Info > div{
+        position: relative;
+        height: 100%;
+    }
+
+    .vortex-menu-Info .vortex-menuInfo-content,
+    .vortex-menu-Info .vortex-menuInfo-footer{
+        position: absolute;
+        width: 100%;
+    }
+
+    .vortex-menu-Info .vortex-menuInfo-content{
+        top: 0;
+        bottom: 50px;
+        overflow: auto;
+        padding: 20px 0 20px 30px;
+    }
+
+        .vortex-menu-Info .vortex-menuInfo-content > li{
+            padding: 10px;
+            line-height: 24px;
+            color: #5C9DF5;
+        }
+
+    .vortex-menuInfo-title{
+        color: #5C9DF5;
+    }
+
+    .vortex-menuInfo-line{
+        overflow: hidden;
+    }
+
+    .vortex-menuInfo-line .vortex-menuInfo-1,
+    .vortex-menuInfo-line .vortex-menuInfo-2{
+        display: inline-block;
+        float: left;
+        color: #A7B6CF;
+    }
+
+        .vortex-menuInfo-line .vortex-menuInfo-1{
+            width: 30%;
+        }
+
+        .vortex-menuInfo-line .vortex-menuInfo-2{
+            width: 70%;
+        }
+
+    .vortex-menu-Info .vortex-menuInfo-footer{
+        bottom: 0;
+        height: 50px;
+        line-height: 50px;
+        background-color: #5C9DF5;
+        text-align: center;
+        color: white;
+        font-size: 14px;
+    }
+
+.vortex-body-cover{
+    top: 88px!important;
+    left: 75px!important;
+    z-index: 212!important;
+}
+
+.vortex-body-menuInfo{
+    top: 0!important;
+}

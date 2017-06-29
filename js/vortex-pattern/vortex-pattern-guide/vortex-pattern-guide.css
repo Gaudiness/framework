@@ -1,0 +1,96 @@
+/*框架2.0的组件样式库*/
+/*update by sunhao */
+/*2016.9.9*/
+/*版本 0.1*/
+
+
+/*********************css样式reset****************/
+* {
+    vertical-align: baseline;
+    font-weight: inherit; 
+    font-family: inherit; 
+    font-style: inherit;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+* {
+	font-size: 12px;
+	color: #7a8895;
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+
+/*********************导航组件***********************/
+body{
+    background-color: #e8f0fa;
+}
+
+.vortex-pattern-guide{
+    padding: 20px;
+}
+
+.vortex-guide-tabs{
+    margin-bottom: 15px;
+    
+}
+
+    .vortex-pattern-guide .vortex-guideTabs-item{
+        display: inline-block;
+        margin-right: 10px;
+        position: relative;
+        width: 130px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        border-radius: 4px;
+        background-color: white;
+        cursor: pointer;
+
+        -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+           -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+        .vortex-pattern-guide .vortex-guideTabs-item:hover,
+        .vortex-pattern-guide .vortexGuideTabsSelected{
+            background-color: #5c9df5;
+        }
+
+            .vortex-pattern-guide .vortex-guideTabs-item:hover span,
+            .vortex-pattern-guide .vortexGuideTabsSelected > span{
+                color: white;
+            }
+
+        .vortex-pattern-guide .vortex-guideTabs-item > span{
+        }
+
+        .vortex-pattern-guide .vortex-guideTabs-item > i{
+            position: absolute;
+            top: 21px;
+            left: 55px;
+            color: #5c9df5;
+        }
+
+.vortex-guide-contents{
+    border-radius: 4px;
+    width: 100%;
+    padding: 20px 40px 20px 45px;
+    background-color: white;
+
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+       -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+    .vortex-guide-contents > div > ol > li > span{
+        line-height: 40px;
+    }
+
+    .vortex-guide-contents > div  > ol > li > p{
+        line-height: 30px;
+        word-wrap: break-word;
+        /*white-space:nowrap;*/
+    }

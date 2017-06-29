@@ -1,0 +1,99 @@
+/*框架2.0的组件样式库*/
+/*update by sunhao */
+/*2016.9.9*/
+/*版本 0.1*/
+
+
+/*********************css样式reset****************/
+* {
+    vertical-align: baseline;
+    font-weight: inherit; 
+    font-family: inherit; 
+    font-style: inherit;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+* {
+	font-size: 12px;
+	color: #7a8895;
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+
+/*********************修改密码组件***********************/
+.vortex-modify-pwd{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 360px;
+    height: 270px;
+    margin-top: -135px;
+    margin-left: -180px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: white;
+    z-index: 1002;
+}
+
+    .vortex-modify-title{
+        height: 50px;
+        line-height: 50px;
+        width: 100%;
+        background-color: #5c9df5;
+        border-radius: 4px 4px 0 0;
+        text-align: center;
+        color: white;
+        font-size: 14px;
+    }
+
+    .vortex-modify-container{
+        padding: 10px 25px;
+        width: 100%;
+    }
+
+        .vortex-modify-container > div{
+            vertical-align: middle;
+            text-align: center;
+            overflow: hidden;
+            line-height: 40px;
+            background-color: white;
+        }
+
+            .vortex-modify-container > div .vortex-modify-btn{
+                display: inline-block;
+                height: 30px;
+                line-height: 30px;
+                padding: 0 25px;
+                margin: 10px 10px 0 10px;
+                border-radius: 5px;
+                color: white;
+                cursor: pointer;
+                background-color: #5c9df5;
+            }
+
+            .vortex-modify-container > div > .vortex-modify-label, .vortex-modify-container > div >.vortex-modify-value{
+                float: left;
+                height: 50px;
+                line-height: 50px;
+            }
+
+            .vortex-modify-container > div > .vortex-modify-label{
+                width: 20%;
+                text-align: right;
+            }
+
+            .vortex-modify-container > div > .vortex-modify-value{
+                width: 80%;
+                height: 30px;
+                background-color: #d9e5ef;
+                margin-top: 10px;
+                padding: 0 10px;
+                border-radius: 4px;
+            }
+
+/*.cover-full-screen{
+
+}*/

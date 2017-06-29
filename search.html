@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>车辆信息</title>
+	<meta charset="utf-8">
+	<script src="js/libs/jquery-1.9.1.js"></script>
+    <script src="js/libs/knockout-3.4.0.js"></script>
+    <script src="js/libs/knockout.mapping-latest.debug.js"></script>
+    <!-- 搜索控件 -->
+    <script src="js/vortex-pattern/vortex-pattern-search/vortex-pattern-search.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="js/vortex-pattern/vortex-pattern-search/vortex-pattern-search.css">
+    <!-- 小工具控件 -->
+    <script src="js/vortex-pattern/vortex-pattern-tools/vortex-pattern-tools.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="js/vortex-pattern/vortex-pattern-tools/vortex-pattern-tools.css"> 
+
+    <!-- 小工具控件 -->
+    <script src="js/vortex-pattern/vortex-pattern-view/vortex-pattern-view.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="js/vortex-pattern/vortex-pattern-view/vortex-pattern-view.css">
+
+    <!-- 视频控件 -->
+    <script src="js/vortex-pattern/vortex-pattern-video/vortex-pattern-video.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="js/vortex-pattern/vortex-pattern-video/vortex-pattern-video.css">
+
+    <!-- 图例控件 -->
+    <script src="js/vortex-pattern/vortex-pattern-legend/vortex-pattern-legend.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="js/vortex-pattern/vortex-pattern-legend/vortex-pattern-legend.css">
+
+    <!-- 遮罩控件 -->
+    <script src="js/vortex-pattern/vortex-pattern-cover/vortex-pattern-cover.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="js/vortex-pattern/vortex-pattern-cover/vortex-pattern-cover.css">
+
+    <script src="js/customer/apic/main.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/customer/apic/car.js" type="text/javascript"></script>
+    <script src="js/customer/apic/facility.js" type="text/javascript"></script>
+    <script src="js/customer/apic/person.js" type="text/javascript"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/vortex-layout.css">
+</head>
+<body>
+<div id="map"></div>
+<div id="top-left">
+	<!-- 搜索控件 -->
+	<div class="vortex-new-search" id="vortex-new-search"></div>
+
+	<div class="vortex-new-container">
+		<!-- tabs页签控件 -->
+		<div class="vortex-panel-tabs" id="vortex-panel-tabs"></div>
+		<!-- 车辆面板 -->
+		<div class="vortex-searchPanel-item">
+			<div id="car-count">
+				<div class="vortex-search-line" data-bind="visible: visible">
+					<span>在线</span>
+					<span class="vortex-count" data-bind="text:countFirst, click:firstClick">0</span>
+					<span>辆，离线</span>
+					<span class="vortex-count" data-bind="text:countSecond, click:secondClick">0</span>
+					<span>辆，停车</span>
+					<span class="vortex-count" data-bind="text:countThird, click:thirdClick">0</span>
+					<span>辆，报警</span>
+					<span class="vortex-count" data-bind="text:countForth, click:forthClick">0</span>
+					<span>辆</span>
+				</div>
+			</div>
+
+			<div class="vortex-main-condition" id="car-condition"></div>
+
+			<div id="car-selected"></div>
+			
+			<div class="vortex-searchPanel-list" id="car-list"></div>
+
+			<div class="vortex-searchPanel-details" id="car-details"></div>
+
+		</div>
+		<!-- 设施面板 -->
+		<div class="vortex-searchPanel-item">
+
+			<div class="vortex-main-condition" id="facility-condition"></div>
+
+			<div id="facility-selected"></div>
+			
+			<div class="vortex-searchPanel-list" id="facility-list"></div>
+			
+		</div>
+
+		<!-- 人员面板 -->
+		<div class="vortex-searchPanel-item">
+
+			<div id="person-selected"></div>
+			
+			<div class="vortex-main-condition" id="person-condition"></div>
+
+			<div class="vortex-searchPanel-list" id="person-list"></div>
+			
+		</div>
+
+	</div>
+</div>
+
+<div id="top-right">
+	<div class="vortex-tools">
+		
+		<div class="vortex-tools-dropdown" id="vortex-tools-theme"></div>
+
+		<div class="vortex-tools-dropdown" id="vortex-tools-area"></div>
+
+		<div class="vortex-tools-dropdown" id="vortex-tools-mark"></div>
+
+		<div class="vortex-tools-dropdown" id="vortex-tools-tools"></div>
+
+		<div class="vortex-tools-timer" id="vortex-tools-timer"></div>
+
+		<div class="clear-both"></div>
+	</div>
+
+	<div class="vortex-panel-container" id="vortex-panel-container">
+		
+	</div>
+
+</div>
+
+<div id="botton-left">
+
+	<div class="vortex-view" id="vortex-view"></div>
+	
+</div>
+
+<div id="botton-right">
+
+	<!-- 图例控件 -->
+	<div class="vortex-legend" id="vortex-legend">
+		
+	</div>
+
+	<div class="vortex-video" id="vortex-video">
+		
+	</div>
+
+</div>
+
+<div id="vortex-cover"></div>
+	
+</div>
+</body>
+</html>

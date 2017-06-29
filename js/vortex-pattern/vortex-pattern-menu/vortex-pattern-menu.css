@@ -1,0 +1,333 @@
+/*框架2.0的组件样式库*/
+/*update by sunhao */
+/*2016.9.9*/
+/*版本 0.1*/
+
+
+/*********************css样式reset****************/
+* {
+    vertical-align: baseline;
+    font-weight: inherit; 
+    font-family: inherit; 
+    font-style: inherit;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+* {
+	font-size: 12px;
+	color: #7a8895;
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+
+
+/*********************container组件***********************/
+.vortex-container-withShadow{
+    position: relative;
+    z-index: 2;
+    min-width: 75px;
+    background-color: #2f323a;
+    height: 100%;
+    -webkit-box-shadow: 3px 0 3px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 3px 0 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 0 3px rgba(0, 0, 0, 0.2);
+}
+
+/*********************用户头像控件***********************/
+.vortex-user-panel{
+    position: relative;
+    text-align: center;
+    -webkit-box-shadow: inset 2px 1px 2px rgba(255, 255, 255, 0.1);
+       -moz-box-shadow: inset 2px 1px 2px rgba(255, 255, 255, 0.1);
+            box-shadow: inset 2px 1px 2px rgba(255, 255, 255, 0.1);
+}
+
+    .vortex-user-panel > div{
+        padding: 20px 0 10px 0;
+        border-bottom: 1px solid #1e2127;
+    }
+
+    .vortex-user-panel .user-pic-panel{
+        width: 45px;
+        height: 45px;
+        line-height: 40px;
+        border-radius: 100%;
+        display: inline-block;
+        background-color: #4d77be;
+        color: white;
+        font-size: 35px;
+    }
+
+    .vortex-user-panel .vortex-user-modify{
+        position: absolute;
+        top: 70px;
+        left: 15px;
+        display: block;
+        background-color: white;
+        padding: 5px 15px 5px 10px;
+        z-index: 102;
+        border-radius: 3px;
+    }
+
+        .vortex-user-panel .vortex-user-modify .vortex-usericon-tag{
+            cursor: pointer;
+            line-height: 28px;
+        }
+
+            .vortex-user-panel .vortex-user-modify .vortex-usericon-tag:hover i,
+            .vortex-user-panel .vortex-user-modify .vortex-usericon-tag:hover span{
+                color: #5c9df5;
+            }
+
+            .vortex-user-panel .vortex-user-modify .vortex-usericon-tag > i,
+            .vortex-user-panel .vortex-user-modify .vortex-usericon-tag > span{
+                vertical-align: middle;
+            }
+
+    .vortex-user-panel .vortex-user-name{
+        width: 75px;
+        padding: 0 5px;
+        overflow: hidden;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+        height: 35px;
+        line-height: 25px;
+    }
+
+    .vortex-userBtn-container{
+        position: relative;
+        height: 24px;
+    }
+
+        .vortex-userBtn-container .skin-change-panel{
+            position: absolute;
+            top: 30px;
+            left: 15px;
+            width: 85px;
+            min-height: 30px;
+            background-color: white;
+            display: inline-block;
+            border-radius: 5px;
+            padding: 5px 0 0 5px;
+            z-index: 1;
+        }
+
+            .vortex-userBtn-container .skin-change-panel > span{
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                color: white;
+                border: 1px solid #ddd;
+                border-radius: 100%;
+                float: left;
+                margin: 0 5px 5px 0;
+                background-color: rgb(47, 50, 58);
+
+            }
+
+    .vortex-userBtn-container > .margin-right{
+        margin-right: 20px;
+    }
+
+    .vortex-userBtn-container > i{
+        font-size: 20px;
+    }
+
+/*********************第一级menu控件***********************/
+.vortex-first-menu{
+    overflow: hidden;
+}
+
+    .vortex-first-menu > div{
+        height: 100%;
+    }
+
+    .vortex-first-menu .vortex-menu-item{
+        height: 60px;
+        line-height: 60px;
+        -webkit-box-shadow: inset 2px 1px 2px rgba(255, 255, 255, 0.1);
+           -moz-box-shadow: inset 2px 1px 2px rgba(255, 255, 255, 0.1);
+                box-shadow: inset 2px 1px 2px rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid #1e2127;
+        cursor: pointer;
+    }
+
+        .vortex-first-menu .vortex-menu-item:hover{
+            background-color: #25282d;
+        }
+
+        .vortex-first-menu .vortex-menu-item:hover span,
+        .vortex-first-menu .vortex-menu-item:hover .item-icon-1,
+        .vortex-first-menu .vortex-menu-item:hover .item-icon-2{
+            color: white;
+        }
+
+            .vortex-first-menu .vortex-menu-item > div{
+                border-left: 2px solid transparent;
+                padding: 0 25px;
+            }
+
+                .vortex-menu-item > div > span, .vortex-menu-item > div > i{
+                    vertical-align: middle;
+                }
+
+                .vortex-menu-item > div > span{
+                    margin: 0 10px;
+                }
+
+        .vortex-first-menu .vortex-menu-item > div:hover{
+            border-left: 2px solid #5c9df5;
+        }
+
+        .vortex-first-menu .vortex-menu-item:hover span,.vortex-first-menu .vortex-menu-item:hover .item-icon-2{
+            display: inline-block;
+        }
+
+        .vortex-first-menu .vortex-menu-item > span, .item-icon-1, .item-icon-2{
+            vertical-align: middle;
+        }
+
+        .vortex-first-menu .vortex-menu-item > span{
+            font-size: 14px;
+        }
+
+        .vortex-first-menu .vortexMenuSelected{
+            border-left: 2px solid #5c9df5!important;
+            background-color: #25282d;
+        }
+
+            .vortex-first-menu .vortexMenuSelected > span, .vortex-first-menu .vortexMenuSelected > i{
+                color: white;
+            }
+        
+        .item-icon-1{
+            font-size: 22px!important;
+        }
+        
+        .item-icon-2{
+            font-size: 12px!important;
+        }
+
+.vortex-menu-footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 44px;
+    line-height: 32px;
+    overflow: hidden;
+    zoom: 1;
+    border-top: 1px solid #1e2127;
+    background-color: #2f323a;
+
+    -webkit-box-shadow: inset 2px 1px 2px rgba(255, 255, 255, 0.1);
+    -moz-box-shadow: inset 2px 1px 2px rgba(255, 255, 255, 0.1);
+    box-shadow: inset 2px 1px 2px rgba(255, 255, 255, 0.1);
+}
+
+    .vortex-menu-footer > div{
+        display: inline-block;
+        width: 50%;
+        text-align: center;
+        padding: 6px 0;
+        cursor: pointer;
+    }
+
+        .vortex-menu-footer > div:hover{
+            background-color: #434a53
+        }
+
+        .vortexMenufooterUB:hover{
+            background-color: #2f323a!important;
+            cursor: not-allowed!important;
+        }
+
+            .vortexMenufooterUB > i:hover{
+                cursor: not-allowed!important;
+            }
+
+        .vortexMenufooterUB:hover{
+            -webkit-box-shadow: inset 2px 1px 2px rgba(255, 255, 255, 0.1);
+               -moz-box-shadow: inset 2px 1px 2px rgba(255, 255, 255, 0.1);
+                    box-shadow: inset 2px 1px 2px rgba(255, 255, 255, 0.1);
+        }
+
+    .vortex-menu-footer .border-right{
+        display: block;
+        border-right: 1px solid #1e2127;
+    }
+
+/*********************第er级menu控件***********************/
+.vortex-sub-menu{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: -220px;
+    width: 220px;
+    height: 100%;
+    background-color: #25282d;
+}
+
+    .vortex-sub-menu > div{
+        height: 100%;
+    }
+
+    .vortex-sub-menu .sub-menu-title{
+        padding: 20px 0;
+        border-left: 3px solid transparent;
+        padding: 30px 15px 10px 15px;
+    }
+
+        .vortex-sub-menu .sub-menu-title > span{
+            display: inline-block;
+            border-bottom: 1px solid #5c9df5;
+            padding: 0 20px 10px 2px;
+            font-size: 20px;
+            color: #5c9df5;
+        }
+
+.sub-menu-panel{
+    padding: 10px 0;
+}
+
+    .sub-menu-panel .paddingRight15{
+        padding-right: 15px;
+    }
+
+    .sub-menu-panel .fontSize14{
+        font-size: 14px!important;
+    }
+
+    .sub-menu-item{
+        line-height: 35px;
+        cursor: pointer;
+        padding-left: 25px;
+    }
+
+        .sub-menu-item:hover{
+            background-color: #1f2226;
+        }
+
+        .subMenuSelected > i, .subMenuSelected > span{
+            color: #5c9df5;
+        }
+
+        .sub-menu-item > div > .sub-menu-icon1,
+        .sub-menu-item > div > .sub-menu-icon1,
+        .sub-menu-item > div > span{
+            vertical-align: middle;
+        }
+
+        .sub-menu-item > div > .sub-menu-icon1{
+            font-size: 20px;
+            margin-right: 5px;
+        }
+
+        .sub-menu-item > div > .sub-menu-icon2{
+            font-size: 14px;
+            float: right;
+        }
